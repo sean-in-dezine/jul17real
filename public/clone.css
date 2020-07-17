@@ -1,0 +1,217 @@
+
+        .btncurrent {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .btnfilters {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+
+        /* ?affects log too  */
+        .display {
+            display: grid;
+            width: 100%;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+	    background-color: lightgreen;
+        }
+
+        /* .table {
+            display: grid;
+        } */
+
+        .rotate {
+            margin-top: 2em;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10vw;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .log {
+            margin-top: 3vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cycle0 {
+            background-color: white;
+        }
+
+        .cycle1 {
+            background-color: lightgray;
+            display: none;
+        }
+
+        .cycle2 {
+            background-color: lightsalmon;
+            display: none;
+        }
+
+        .cycle3 {
+            background-color: lightgoldenrodyellow;
+            display: none;
+        }
+
+        .cycle4 {
+            background-color: lightcyan;
+            display: none;
+        }
+
+        .btnlog {
+            margin-top: 3vh;
+        }
+
+        .search {
+            margin-top: 3vh;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            width: 90vw;
+        }
+
+        .filters {
+            margin-top: 3vh;
+
+        }
+
+        .logbtnfilters {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 5vh;
+
+        }
+
+        .cashboard {
+            width: 100vw;
+	    background-color: lightgreen;
+			
+
+        }
+
+
+        .rockbody {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 3em;
+            text-align: center;
+            vertical-align: center;
+            justify-items: center;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .td {
+            width: 100%;
+
+        }
+
+        .fourbuttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            grid-gap: 0.5em;
+        }
+
+        .btnofour {
+            width: 100%;
+        }
+
+        .tiles {
+            margin-top: 10vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            grid-gap: 2em;
+
+        }
+
+        .tile {
+            width: 100%;
+            height: 12vh;
+
+        }
+
+
+        .tile>button {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .final {
+            margin-top: 5em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3em;
+
+        }
+
+        .final>button {
+            height: 7vh;
+
+            width: 100%;
+        }
+
+        .panel {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-gap: 2em;
+            border-bottom: solid;
+        }
+
+        .banner {
+
+            display: grid;
+            grid-gap: 2em;
+            grid-template-columns: 1fr;
+        }
+
+        .futurenotices {
+            background-color: rgb(216, 216, 216);
+        }
+
+        h4 {
+            background-color: lightseagreen;
+        }
+
+        div.cashboard {
+            /* !make this follow the user at like 20vh */
+            /* !disable scrolling while @ 20vh */
+            /* !this shit never goes away, no matter what cycle you're on. how bout that mf */
+            margin-top: 8vh;
+            border-top: solid;
+            border-bottom: solid;
+            height: 66vh;
+        }
+
+        .btnpanel {
+            height: 100%;
+        }

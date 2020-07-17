@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashboard Clone </title>
+    <link rel="stylesheet" href="../../../public/clone.css">
+
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="futurenotices">
+
+            <h4 class="futurenotices"><s>get users... fill the .. options .. </s></h4>
+            <h1>be able to select user, and do a URL param modifier here based on the user.</h1>
+            <h1>once user selected, POST, that tells the server from now on, use this user..... </h1>
+            <h1>then display pending for the use</h1>
+            <h1>add the queries as you go to query database</h1>
+            <h1>make the ability to add favorites for all users and access global favorites (others favorites) and add
+                to ur collection </h1>
+            <h1>make all log changes and comments added be posted to the top (neglect comments in the log section) </h1>
+        </div>
+        <div class="panel" id="panel">
+
+
+
+
+            <!-- ?add users -->
+            <div class="addusers">
+                <input id='username' type='text' name='username' required='true' placeholder='username'>
+                <input id='password' type='password' name='password' required='true' placeholder='password'>
+                <button class="submit" id="addusers">add users</button>
+            </div>
+            <!-- !::ref::addusers -->
+
+
+
+            <!-- ?get users -->
+            <!-- !::ref::getAllUsers -->
+            <div id="panelbtn_container" class="panelbtn_container">
+                <button id="panel_user" class="btnpanel">Pick a user <n>(users.js, users_fetches.js)</n></button>
+
+
+            </div>
+
+            <!-- ?query db -->
+            <button class="query">query database</button>
+
+
+            <button class="addloops" id="addloops"> add loops </button>
+            <!-- ?favorites -->
+            <button class="favorites">personal favorites</button>
+
+            <!-- ?chatlogs -->
+            <div class="chatlogs">
+                <table class="banner">
+                    <h4>comments</h4>
+
+                    <tr>
+                        <td>logchat1</td>
+                        <td>logchat1</td>
+                        <td>logchat1</td>
+                        <td>logchat1</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ?logs minus comments -->
+            <div class="transactions">
+                <table class="banner">
+                    <h4>changes displayed here</h4>
+                    <tr>
+                        <td>log1</td>
+                        <td>log1</td>
+                        <td>log1</td>
+                        <td>log1</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+        <script>
+
+
+        </script>
+
+
+        <!-- !cycle 0 -->
+
+        <div class="cycle0">
+            <div class="cashboard">
+                <div class="display">
+                    <div class="table">
+                        <table class="cashboard">
+                            <thead>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                </tr>
+                            </thead>
+                            <tbody class="rockbody">
+                                <tr>
+                                    <td>
+                                        <div id="rockbody" class="td">
+                                            <div class="fourbuttons">
+                                                <button class="loopid btnone btnofour">one</button>
+                                                <button class="status btntwo btnofour">two</button>
+                                                <button class="from btnthree btnofour">three</button>
+                                                <button class="elapsed btnfour btnofour">four</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="td">
+                                            <div class="fourbuttons">
+                                                <button class="loopid btnone btnofour">one</button>
+                                                <button class="status btntwo btnofour">two</button>
+                                                <button class="from btnthree btnofour">three</button>
+                                                <button class="elapsed btnfour btnofour">four</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="td">
+                                            <div class="fourbuttons">
+                                                <button class="loopid btnone btnofour">one</button>
+                                                <button class="status btntwo btnofour">two</button>
+                                                <button class="from btnthree btnofour">three</button>
+                                                <button class="elapsed btnfour btnofour">four</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <div class="td">
+                                            <div class="fourbuttons">
+                                                <button class="loopid btnone btnofour">one</button>
+                                                <button class="status btntwo btnofour">two</button>
+                                                <button class="from btnthree btnofour">three</button>
+                                                <button class="elapsed btnfour btnofour">four</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+                <div class="rotate rotate_buttons_container">
+
+                    <div class="btnpending">
+                        <button class="btnrotate">
+                            Pending
+                        </button>
+                    </div>
+                    <div class="btncurrent">
+                        <button class="btnrotate">
+                            Current
+                        </button>
+                        <button class="btnrotate">
+                            Favorites
+                        </button>
+                    </div>
+                    <div class="btnpast">
+                        <button class="btnrotate">
+                            Past
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="log">
+                <div class="btnlog">
+                    <button class="btnlog">
+                        log
+                    </button>
+                </div>
+            </div>
+            <div class="search">
+                <div class="searchbar">
+                    <input type="text" class="inputsearch">
+                    <button class="btnsearch">SEARCH</button>
+
+                </div>
+            </div>
+            <div class="filters">
+                <div class="btnfilters">
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="tiles">
+                <div class="tile">
+                    <button class="back">
+                        back to top
+                    </button>
+                </div>
+                <div class="tile">
+                    <button class="form">Form</button>
+                </div>
+                <div class="tile">
+                    <button class="help">
+                        help
+                    </button>
+                </div>
+                <div class="tile">
+                    <button class="notes">
+                        notes
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="final">
+                <button class="reports">reports</button>
+                <button class="panel">panel</button>
+                <button class="inception">inception</button>
+                <button class="users">users</button>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- !cycle 1 -->
+
+        <div class="cycle1">
+            <div class="cashboard"></div>
+            <div class="log">
+                <div class="display">
+                    <div class="table">
+                        <table class="cashboard">
+                            <thead>Whatever is being displayed
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                            </thead>
+                            <tbody>
+                                <tr>1</tr>
+                                <tr>2</tr>
+                                <tr>3</tr>
+                                <tr>4</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="logbtnfilters">
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                    <button class="btnfilter">xxxx</button>
+                </div>
+
+                <div class="search"></div>
+                <div class="filters"></div>
+                <div class="tiles"></div>
+                <div class="final"></div>
+
+
+            </div>
+
+
+
+            <!-- !cycle 2-->
+
+            <div class="cycle2">
+
+                <div class="cashboard"></div>
+                <div class="log"></div>
+                <div class="search"></div>
+                <div class="filters"></div>
+                <div class="tiles"></div>
+                <div class="final"></div>
+
+
+
+            </div>
+            <!-- !cycle 3 -->
+
+
+            <div class="cycle3">
+
+                <div class="cashboard"></div>
+                <div class="log"></div>
+                <div class="search"></div>
+                <div class="filters"></div>
+                <div class="tiles"></div>
+                <div class="final"></div>
+
+
+            </div>
+
+
+            <!-- !cycle 4-->
+
+            <div class="cycle4">
+
+                <div class="cashboard"></div>
+                <div class="log"></div>
+                <div class="search"></div>
+                <div class="filters"></div>
+                <div class="tiles"></div>
+                <div class="final"></div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- end main container -->
+        </div>
+
+
+
+        <!-- ::ref::pending
+      ::ref::pending_data
+				
+				getData() 
+				::ref::placeholder_user -->
+
+        <script src="../../../public/displays/data.js"></script>
+        <script src="../../../public/displays/pending.js"></script>
+        <script src="../../../public/loops/loops_fetches.js"></script>
+        <script src="../../../public/users/users.js"></script>
+        <script src="../../../public/users/users_fetches.js"></script>
+</body>
+
+</html>
