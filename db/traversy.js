@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const server = require("./init");
 let MONGO_URI =
-  "mongodb+srv://sean:sean@cluster0-4i2zs.mongodb.net/supagangsta?retryWrites=true&w=majority";
+//deleted
 const connectDB = async () => {
   async function connect() {
     console.log("connecting to mongodbatlas");
